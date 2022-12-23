@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DailyPlanner</string>
+	<string name="show">Show</string>
+	<string name="modify">Update</string>
+	<string name="delete">Delete</string>
+	<string name="search">Search</string>
+	<string name="search_input">Search Event</string>
+	<string name="add">Add New Event</string>
+	<string name="date"></string>
+    <string name="time">Press to set time</string>
+	<string name="description">Enter Description</string>
+	<string name="title">Title</string>
+	<string name="location">Location</string>
+</resources>

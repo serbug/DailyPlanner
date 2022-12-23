@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <item
+            android:id="@+id/current_day"
+            android:icon="@drawable/ic_event"
+            android:iconTint="#F4F3F3"
+            android:title=""
+            app:showAsAction="always"/>
+    <item
+            android:id="@+id/action_search"
+            android:icon="@drawable/ic_search"
+            android:iconTint="#FFFFFF"
+            android:title=""
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
+            app:showAsAction="ifRoom|collapseActionView"/>
+
+</menu>

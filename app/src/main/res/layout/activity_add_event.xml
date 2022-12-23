@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    
+    <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintEnd_toEndOf="parent"
+            
+            app:layout_constraintStart_toStartOf="parent"/>
+    
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/eventTitleInputLayout"
+            style="?attr/textInputFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/title"
+            app:startIconDrawable="@drawable/ic_title_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_add"
+            tools:ignore="HardcodedText,MissingConstraints">
+    
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/event_title_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                tools:ignore="HardcodedText,SpeakableTextPresentCheck"
+                android:textColorHint="#616161"/>
+    
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/locationInputLayout"
+            style="?attr/textInputFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/location"
+            app:startIconDrawable="@drawable/ic_location_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventTitleInputLayout"
+            tools:ignore="HardcodedText,MissingConstraints">
+    
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/location_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#616161"
+                tools:ignore="MissingConstraints"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/timeInputLayout"
+            style="?attr/textInputFilledStyle"
+            android:layout_width="250dp"
+            android:layout_height="59dp"
+            android:hint="@string/time"
+            app:startIconDrawable="@drawable/ic_schedule"
+
+            tools:ignore="HardcodedText,MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationInputLayout"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp">
+    
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/time_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                tools:ignore="HardcodedText,SpeakableTextPresentCheck"
+                />
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dateInputLayout"
+            style="?attr/textInputFilledStyle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:hint="@string/date"
+            app:startIconDrawable="@drawable/ic_black_event"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeInputLayout"
+            tools:ignore="HardcodedText,MissingConstraints">
+        
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                tools:ignore="HardcodedText,SpeakableTextPresentCheck"
+                />
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/descriptionInputLayout"
+            style="?attr/textInputFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/description"
+            app:startIconDrawable="@drawable/ic_reorder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateInputLayout"
+            tools:ignore="HardcodedText,MissingConstraints">
+    
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/description_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                tools:ignore="HardcodedText,SpeakableTextPresentCheck"
+                android:textColorHint="#616161"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
