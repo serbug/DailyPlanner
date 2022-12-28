@@ -1,5 +1,5 @@
-
-##  <span style="color:grey">**🔥Organiser Mobile Application (DAILY PLANNER)**</span>
+**<p align="center">[![](https://i.ibb.co/G28F37p/fcim-1.png)](https://utm.md)<p/>**
+## <p align="center"> <span style="color:grey">**🔥Organiser Mobile Application (DAILY PLANNER)**</span> </p>
 
 ## 📌Obiective 
 
